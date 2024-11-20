@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 聊天助手</title>
+    <!-- 引入 Markdown 解析库 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- 引入代码高亮库 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/github-dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/highlight.min.js"></script>
+    <!-- 引入 JWT 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/jsrsasign@10.9.0/lib/jsrsasign-all-min.js"></script>
+    <!-- 引入主样式表 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar" id="sidebar">
+            <button class="new-chat-btn" id="newChatBtn">
+                <span>新建对话</span>
+            </button>
+            <div class="chat-history" id="chatHistory">
+                <!-- 历史对话列表将通过 JavaScript 动态添加 -->
+            </div>
+        </aside>
+
+        <!-- 主聊天区域 -->
+        <main class="main-content">
+            <header class="chat-header">
+                <button class="toggle-sidebar" id="toggleSidebar">☰</button>
+                <h2 id="currentChatTitle">新对话</h2>
+                <div class="header-actions">
+                    <button id="renameChat">重命名</button>
+                    <button id="deleteChat">删除对话</button>
+                </div>
+            </header>
+
+            <div class="messages-container" id="messagesContainer">
+                <!-- 消息内容将通过 JavaScript 动态添加 -->
+            </div>
+
+            <div class="input-area">
+                <div class="input-container">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="输入您的问题..." 
+                        rows="1"
+                    ></textarea>
+                    <button id="uploadButton" class="upload-btn">
+                        📎
+                    </button>
+                    <button id="sendButton" class="send-btn">
+                        发送
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

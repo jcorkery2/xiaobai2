@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小白的个人主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">小白</div>
+        <div class="nav-links">
+            <a href="#home" class="active">首页</a>
+            <a href="#about">关于我</a>
+            <a href="#contact">联系方式</a>
+        </div>
+    </nav>
+
+    <!-- 主视觉区域 -->
+    <section class="hero" id="home">
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="E:/curor_learn/item/imgs/57ca8501cdda3b7e5026a3dc801c91f.jpg" alt="小白的照片1">
+                    <p class="caption">小白的生活照</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="E:/curor_learn/item/imgs/144e8a2b225a3f7011444d1de2ae081.jpg" alt="小白的照片2">
+                    <p class="caption">小白的工作照</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="E:/curor_learn/item/imgs/443a3343872cfe55d1729d0bb4ff6b8.jpg" alt="小白的照片3">
+                    <p class="caption">小白的旅行照</p>
+                </div>
+            </div>
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- 个人简介区域 -->
+    <section class="about" id="about">
+        <div class="profile">
+            <img src="E:/curor_learn/item/imgs/b3afdeb7a3672e63fc8d61dd28576df.jpg" alt="小白的头像" class="avatar">
+            <div class="bio">
+                <h2>关于我</h2>
+                <p>这里是您的个人简介，可以描述您的专业背景、兴趣爱好等。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚社交媒体区域 -->
+    <footer id="contact">
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    
+    <!-- 添加 script.js 引用 -->
+    <script src="script.js"></script>
+</body>
+</html> 
